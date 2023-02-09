@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 15px;
+  z-index: 999;
+}
+.left-nav {
+  flex: 3;
+
+  padding: 10px 15px;
+}
+.menu {
+  height: 20px;
+  width: 20px;
+}
+.logo {
+  height: 20px;
+  margin: 0 20px;
+}
+.middle-nav {
+  display: flex;
+  flex: 6;
+  align-items: center;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.search {
+  height: 40px;
+  width: 87%;
+  outline: none;
+  border-radius: 25px 0 0 25px;
+  border: 1px solid #e2e2e2;
+  font-size: 16px;
+  padding: 0 15px;
+}
+.search-btn {
+  height: 40px;
+  width: 10%;
+  border-radius: 0 25px 25px 0;
+  border: 1px solid #e2e2e2;
+}
+.search-btn-icon {
+  height: 20px;
+}
+.vn-search {
+  height: 25px;
+}
+.right-nav {
+  height: 40px;
+
+  position: relative;
+  flex: 3;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.upload-icon,
+.notification-icon,
+.profile-pic {
+  height: 20px;
+  margin: 0 20px;
+}
+.notification-container {
+  background-color: blanchedalmond;
+}
+.notification-badge {
+  background-color: #cc0000;
+  color: #fff;
+  border-radius: 9px;
+  padding: 1px 4px;
+  width: fit-content;
+  font-size: 12px;
+  margin-left: -30px;
+  margin-top: -20px;
+}
+.profile-pic {
+  background-color: #ddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+}
+.content {
+  display: flex;
+}
+.sidebar {
+  padding: 10px 20px;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 20%;
+  margin-right: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #909090;
+  border-radius: 5px;
+}
+.sidebar ul li {
+  display: flex;
+  scrollbar-face-color: #cc0000;
+  padding: 8px 10px;
+  border-radius: 10px;
+  align-items: center;
+}
+.sidebar ul li:hover {
+  background-color: #e6e6e6;
+}
+.active {
+  background-color: #f2f2f2;
+}
+.list-icon {
+  height: 25px;
+}
+
+li .list-text {
+  font-size: 15px;
+
+  margin-left: 20px;
+}
+.sub-nav {
+  position: sticky;
+  top: 63px;
+  z-index: 997;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  background-color: #fff;
+}
+.sub-nav ul {
+  display: flex;
+}
+
+.sub-nav ul li {
+  list-style-type: none;
+  margin: 0 10px;
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+.btn {
+  padding: 3px 4px;
+}
+.video-container {
+  margin-top: 30px;
+}
+.video-thumbnail {
+  position: relative;
+  height: 100%;
+}
+.video-card {
+  height: 150px;
+  width: 250px;
+  margin-bottom: 130px;
+  margin-left: 10px;
+}
+.thumbnail-image {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.time {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 3px 4px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-right: 3px;
+}
+.title-image {
+  display: flex;
+
+  margin-top: 10px;
+}
+.title-image-pic {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.title-image-info {
+  margin-left: 10px;
+}
+.title-image-info {
+  display: flex;
+  flex-direction: column;
+}
+.channel {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #7b7b7b;
+}
+.view-hour {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #3b3b3b;
+}
+.title-image-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.horizontal {
+  margin: 15px 0;
+  border-color: #eaeaea;
+  background-color: #eaeaea;
+}
+.explore-img {
+  height: 20px;
+  width: 20px;
+  margin-right: 25px;
+  object-fit: cover;
+}
+.explore-img1 {
+  height: 20px;
+  width: 20px;
+  margin-right: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.icon-size {
+  font-size: 18px;
+}

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>(32) Youtube clone</title>
+
+    <link
+      rel="shortcut icon"
+      href="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="left-nav">
+          <img src="./images/hamburger-menu.svg" alt="menu" class="menu" />
+          <img src="./images/youtube-logo.svg" alt="logo" class="logo" />
+        </div>
+        <div class="middle-nav">
+          <div class="search-container">
+            <input type="text" placeholder="Search" class="search" />
+            <button class="search-btn">
+              <img
+                src="./images/search.svg"
+                alt="seach"
+                class="search-btn-icon"
+              />
+            </button>
+          </div>
+          <img
+            src="./images/voice-search-icon.svg"
+            alt="voice-search-icon"
+            class="vn-search"
+          />
+        </div>
+        <div class="right-nav">
+          <img src="./images/upload.svg" alt="upload" class="upload-icon" />
+
+          <img
+            src="./images/notifications.svg"
+            alt=""
+            class="notification-icon"
+          />
+          <div class="notification-badge">9+</div>
+
+          <div class="profile-pic">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="sidebar">
+          <ul>
+            <li class="active">
+              <img src="./images/home.svg" alt="" class="list-icon" />
+              <span class="list-text">Home</span>
+            </li>
+            <li>
+              <img
+                src="./images/YouTube_Shorts_29.png"
+                alt=""
+                class="list-icon"
+              />
+              <span class="list-text">Shorts</span>
+            </li>
+            <li>
+              <img src="./images/subscriptions.svg" alt="" class="list-icon" />
+              <span class="list-text">Subscriptions</span>
+            </li>
+          </ul>
+          <hr class="horizontal" />
+          <ul>
+            <li>
+              <img src="./images/library.svg" alt="" class="list-icon" />
+              <span class="list-text">Library</span>
+            </li>
+            <li>
+              <img
+                src="https://e7.pngegg.com/pngimages/6/111/png-clipart-computer-icons-web-browser-web-browsing-history-world-wide-web-text-desktop-wallpaper-thumbnail.png"
+                alt=""
+                class="list-icon"
+              />
+
+              <span class="list-text">History</span>
+            </li>
+            <li>
+              <img
+                src="https://icon-library.com/images/youtube-video-icon-png/youtube-video-icon-png-27.jpg"
+                alt=""
+                class="list-icon"
+              />
+              <span class="list-text">Your Videos</span>
+            </li>
+            <li>
+              <img
+                src="https://icon-library.com/images/later-icon/later-icon-20.jpg"
+                alt=""
+                class="list-icon"
+              />
+              <span class="list-text">Whatch later</span>
+            </li>
+            <li>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIQpkYyDAY5QhF-JD_IWrqLVuR4DD4Ix2Tg&usqp=CAU"
+                alt=""
+                class="list-icon"
+              />
+              <span class="list-text">Liked videos</span>
+            </li>
+          </ul>
+          <hr class="horizontal" />
+          <ul>
+            <li>Subscriptions</li>
+            <ul>
+              <li>
+                <img
+                  src="https://yt3.ggpht.com/r8byAd1eRleQH6LgdYuEp_iGL80WcBPIPE3FvyT9bGTUNvr7LJaS6X9IxrzvPgNgcVnpeDMMV34=s88-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="explore-img1"
+                />
+                Javascripts
+              </li>
+              <li>
+                <img
+                  src="https://yt3.ggpht.com/OtB--dcR_oNUZUaUsuyk2ShT5nFYjEcj9Yxx50-Nner03vXKt4IWXtP--JrnSGQbwRSHYuVb38g=s88-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="explore-img1"
+                />
+                Edureca
+              </li>
+              <li>
+                <img
+                  src="https://yt3.ggpht.com/ytc/AL5GRJVFUbrqLgTKs3qvoiGiZDvJHXkB_pzHwyussmGX=s88-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="explore-img1"
+                />
+                Flutter
+              </li>
+              <li>
+                <img
+                  src="https://yt3.ggpht.com/wg1TITEoPfxvBGfzuqWyt3bqm_qu35ZhMswUv3feetU3xNX_6wsAXZF40OlPIgY4TmqbqCmAZ1U=s88-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="explore-img1"
+                />
+                JSM
+              </li>
+              <li>
+                <img
+                  src="https://yt3.ggpht.com/ytc/AL5GRJXPR4dSz0wwP-elkeiWUMnfZlCtNZP8Rd-tmFOZYg=s88-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="explore-img1"
+                />
+                Freecode camp
+              </li>
+              <li>
+                <img
+                  src="https://yt3.ggpht.com/ytc/AL5GRJVoQSnUO2bKegAL-BR88em82hP5v1eT0g814-lV=s88-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="explore-img1"
+                />
+                Legacy 11
+              </li>
+              <li>
+                <img
+                  src="https://yt3.ggpht.com/ytc/AL5GRJXev2NIsDYSbxtF7rhC4IaUr8B6MiGw1B5plnmPug=s88-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="explore-img1"
+                />
+                Bro Code
+              </li>
+              <li>
+                <img
+                  src="https://static.thenounproject.com/png/2623546-200.png"
+                  alt=""
+                  class="explore-img1"
+                />
+                Show more
+              </li>
+            </ul>
+            <hr class="horizontal" />
+            <li>Explore</li>
+            <ul>
+              <li>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1710/1710130.png"
+                  alt=""
+                  class="explore-img"
+                />
+
+                Trending
+              </li>
+              <li>
+                <img
+                  src="https://e7.pngegg.com/pngimages/926/691/png-clipart-musical-note-computer-icons-music-symbol-miscellaneous-angle-thumbnail.png"
+                  alt=""
+                  class="explore-img"
+                />
+                Music
+              </li>
+              <li>
+                <img
+                  src="https://e7.pngegg.com/pngimages/68/94/png-clipart-streaming-media-computer-icons-broadcasting-youtube-live-world-wide-web-text-monochrome.png"
+                  alt=""
+                  class="explore-img"
+                />
+                Live
+              </li>
+              <li>
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/youtube-gaming-4627159-3853350.png"
+                  alt=""
+                  class="explore-img"
+                />
+                Gaming
+              </li>
+              <li>
+                <img
+                  src="http://cdn.onlinewebfonts.com/svg/img_334238.png"
+                  alt=""
+                  class="explore-img"
+                />News
+              </li>
+              <li>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0gCf7FhPI7UhTOHpdn4Lwnvj_H6j2yj_pZw&usqp=CAU"
+                  alt=""
+                  class="explore-img"
+                />Sports
+              </li>
+              <li>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Light_Bulb-Silhouette.svg/1200px-Light_Bulb-Silhouette.svg.png"
+                  alt=""
+                  class="explore-img"
+                />Learning
+              </li>
+            </ul>
+            <hr class="horizontal" />
+            <li>More from YouTube</li>
+            <ul>
+              <li>
+                <img
+                  src="./images/YouTube-Studio.png"
+                  alt=""
+                  class="explore-img"
+                />
+                Creator Studio
+              </li>
+              <li>
+                <img
+                  src="./images/youtube-music.svg"
+                  alt=""
+                  class="explore-img"
+                />
+                YouTube Music
+              </li>
+              <li>
+                <img
+                  src="data:image/png;base64,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"
+                  alt=""
+                  class="explore-img"
+                />
+                YouTube Kids
+              </li>
+              <li>
+                <img
+                  src="https://www.freepnglogos.com/uploads/youtube-tv-png/youtube-tv-youtube-watch-record-live-apk-download-from-moboplay-21.png"
+                  alt=""
+                  class="explore-img"
+                />
+                YouTube TV
+              </li>
+            </ul>
+            <hr class="horizontal" />
+            <li>
+              <i class="fa-solid fa-gear explore-img icon-size"></i> Settings
+            </li>
+            <li>
+              <i class="fa-regular fa-flag explore-img icon-size"></i>Report
+              history
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-question explore-img icon-size"></i
+              >Help
+            </li>
+            <li>
+              <i class="fa-regular fa-message explore-img icon-size"></i>Send
+              feedback
+            </li>
+          </ul>
+          <hr class="horizontal" />
+          <div>
+            <p>
+              AboutPressCopyrightContact usCreatorsAdvertiseDevelopers
+              TermsPrivacyPolicy & SafetyHow YouTube worksTest new features
+            </p>
+            <small>&copy 2023 Google LLC</small>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="sub-nav">
+            <ul>
+              <li><div class="btn">All</div></li>
+              <li><div class="btn">Mixes</div></li>
+              <li><div class="btn">Music</div></li>
+              <li><div class="btn">Live</div></li>
+              <li><div class="btn">Troops</div></li>
+              <li><div class="btn">HTML</div></li>
+              <li><div class="btn">React</div></li>
+              <li><div class="btn">Public speaking</div></li>
+              <li><div class="btn">Afrobeat</div></li>
+              <li><div class="btn">New to you</div></li>
+            </ul>
+          </div>
+
+          <div class="video-container">
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""
+                  class="thumbnail-image"
+                />
+                <span class="time">14:00</span>
+              </div>
+              <div class="title-image">
+                <img
+                  src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="title-image-pic"
+                  alt=""
+                />
+                <div class="title-image-info">
+                  <span class="title-image-text"
+                    >This is video of testing testing testing testing</span
+                  >
+                  <span class="channel">Demo Channel</span>
+                  <div class="view-hour">
+                    <span> 15k views </span>
+                    <span>&nbsp; &#x2022; &nbsp;2 hours ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/13409672/pexels-photo-13409672.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""
+                  class="thumbnail-image"
+                />
+                <span class="time">14:00</span>
+              </div>
+              <div class="title-image">
+                <img
+                  src="https://images.pexels.com/photos/13409672/pexels-photo-13409672.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="title-image-pic"
+                  alt=""
+                />
+                <div class="title-image-info">
+                  <span class="title-image-text"
+                    >This is video of testing testing testing testing</span
+                  >
+                  <span class="channel">Demo Channel</span>
+                  <div class="view-hour">
+                    <span> 15k views </span>
+                    <span>&nbsp; &#x2022; &nbsp;2 hours ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <img
+                  src="https://i.ytimg.com/an_webp/O79pJ7qXwoE/mqdefault_6s.webp?du=3000&sqp=CMS0lZ8G&rs=AOn4CLBg-jSl8it7LElOgRzoJ86jL2oHgQ"
+                  alt=""
+                  class="thumbnail-image"
+                />
+                <span class="time">14:00</span>
+              </div>
+              <div class="title-image">
+                <img
+                  src="https://i.ytimg.com/vi/O79pJ7qXwoE/hqdefault_12100.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDxnBA1TSQODyiGkhDMOF1NPTt_vw"
+                  class="title-image-pic"
+                  alt=""
+                />
+                <div class="title-image-info">
+                  <span class="title-image-text"
+                    >How To Make a Website With WordPress (Beginners
+                    Tutorial)</span
+                  >
+                  <span class="channel">Demo Channel</span>
+                  <div class="view-hour">
+                    <span> 15M views </span>
+                    <span>&nbsp; &#x2022;&nbsp;2 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <img
+                  src="https://i.ytimg.com/vi/d56mG7DezGs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBSvF5_2xk3_x3H5lFdRuHrhNVVzw"
+                  alt=""
+                  class="thumbnail-image"
+                />
+                <span class="time">14:00</span>
+              </div>
+              <div class="title-image">
+                <img
+                  src="https://i.ytimg.com/vi/d56mG7DezGs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBSvF5_2xk3_x3H5lFdRuHrhNVVzw"
+                  class="title-image-pic"
+                  alt=""
+                />
+                <div class="title-image-info">
+                  <span class="title-image-text"
+                    >TypeScript Tutorial for Beginners</span
+                  >
+                  <span class="channel">Demo Channel</span>
+                  <div class="view-hour">
+                    <span> 1509k views </span
+                    ><span> &nbsp; &#x2022;&nbsp;2 hours ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/935789/pexels-photo-935789.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""
+                  class="thumbnail-image"
+                />
+                <span class="time">7:00</span>
+              </div>
+              <div class="title-image">
+                <img
+                  src="https://images.pexels.com/photos/935789/pexels-photo-935789.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="title-image-pic"
+                  alt=""
+                />
+                <div class="title-image-info">
+                  <span class="title-image-text">Valentine surprise</span>
+                  <span class="channel">Love</span>
+                  <div class="view-hour">
+                    <span> 705k views </span>
+                    <span class="time-ago">
+                      &nbsp; &#x2022; &nbsp;2 hours ago</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/11035366/pexels-photo-11035366.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""
+                  class="thumbnail-image"
+                />
+                <span class="time">14:00</span>
+              </div>
+              <div class="title-image">
+                <img
+                  src="https://images.pexels.com/photos/11035366/pexels-photo-11035366.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="title-image-pic"
+                  alt=""
+                />
+                <div class="title-image-info">
+                  <span class="title-image-text"
+                    >This is video of testing testing testing testing</span
+                  >
+                  <span class="channel">Demo Channel</span>
+                  <div class="view-hour">
+                    <span> 15k views </span>
+                    <span class="time-ago">
+                      &nbsp; &#x2022; &nbsp;2 hours ago</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/5474295/pexels-photo-5474295.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""
+                  class="thumbnail-image"
+                />
+                <span class="time">14:00</span>
+              </div>
+              <div class="title-image">
+                <img
+                  src="https://images.pexels.com/photos/5474295/pexels-photo-5474295.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="title-image-pic"
+                  alt=""
+                />
+                <div class="title-image-info">
+                  <span class="title-image-text"
+                    >This is video of testing testing testing testing</span
+                  >
+                  <span class="channel">Demo Channel</span>
+                  <div class="view-hour">
+                    <span> 15k views </span>
+                    <span class="time-ago">
+                      &nbsp; &#x2022; &nbsp;2 hours ago</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AL5GRJWJFySJVNNSiJpfFyC4o_rkBbtD1hkLeJAn9tLL-A=s88-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="thumbnail-image"
+                />
+                <span class="time">14:00</span>
+              </div>
+              <div class="title-image">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AL5GRJWJFySJVNNSiJpfFyC4o_rkBbtD1hkLeJAn9tLL-A=s88-c-k-c0x00ffffff-no-rj"
+                  class="title-image-pic"
+                  alt=""
+                />
+                <div class="title-image-info">
+                  <span class="title-image-text"
+                    >This is video of testing testing testing testing</span
+                  >
+                  <span class="channel">Demo Channel</span>
+                  <div class="view-hour">
+                    <span> 15k views </span>
+                    <span class="time-ago">
+                      &nbsp; &#x2022; &nbsp;2 hours ago</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <img
+                  src="https://yt3.ggpht.com/_qH4y2gbY3qztkVBg1Pw3Bte5Bq9SVvGJoWVldxc7WFnWMIF6tOrbnbAX7FhCENMOZ6Atr3RLTI=s68-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="thumbnail-image"
+                />
+                <span class="time">14:00</span>
+              </div>
+              <div class="title-image">
+                <img
+                  src="https://yt3.ggpht.com/_qH4y2gbY3qztkVBg1Pw3Bte5Bq9SVvGJoWVldxc7WFnWMIF6tOrbnbAX7FhCENMOZ6Atr3RLTI=s68-c-k-c0x00ffffff-no-rj"
+                  class="title-image-pic"
+                  alt=""
+                />
+                <div class="title-image-info">
+                  <span class="title-image-text"
+                    >This is video of testing testing testing testing</span
+                  >
+                  <span class="channel">Demo Channel</span>
+                  <div class="view-hour">
+                    <span> 15k views </span>
+                    <span class="time-ago">
+                      &nbsp; &#x2022; &nbsp;2 hours ago</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <img
+                  src="https://i.ytimg.com/an_webp/ai1wJJGpbX0/mqdefault_6s.webp?du=3000&sqp=CMi0lZ8G&rs=AOn4CLAEwXVWgC8GP1TuJhJIzr7Mw0MDTg"
+                  alt=""
+                  class="thumbnail-image"
+                />
+                <span class="time">14:00</span>
+              </div>
+              <div class="title-image">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AL5GRJXQeQZHPASKgVz9hvWeXfUXfXkrwx63ingde7BNCQ=s48-c-k-c0x00ffffff-no-rj"
+                  class="title-image-pic"
+                  alt=""
+                />
+                <div class="title-image-info">
+                  <span class="title-image-text"
+                    >This is video of testing testing testing testing</span
+                  >
+                  <span class="channel">Demo Channel</span>
+                  <div class="view-hour">
+                    <span> 15k views </span>
+                    <span class="time-ago">
+                      &nbsp; &#x2022; &nbsp;2 hours ago</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <img
+                  src="https://i.ytimg.com/an_webp/IYI0em-xT28/mqdefault_6s.webp?du=3000&sqp=CMuVlZ8G&rs=AOn4CLBBEomAjR35oJfLMOh-_GuhIDrfEA"
+                  alt=""
+                  class="thumbnail-image"
+                />
+                <span class="time">14:00</span>
+              </div>
+              <div class="title-image">
+                <img
+                  src="https://i.ytimg.com/an_webp/IYI0em-xT28/mqdefault_6s.webp?du=3000&sqp=CMuVlZ8G&rs=AOn4CLBBEomAjR35oJfLMOh-_GuhIDrfEA"
+                  class="title-image-pic"
+                  alt=""
+                />
+                <div class="title-image-info">
+                  <span class="title-image-text"
+                    >This is video of testing testing testing testing</span
+                  >
+                  <span class="channel">Demo Channel</span>
+                  <div class="view-hour">
+                    <span> 15k views </span>
+                    <span class="time-ago">
+                      &nbsp; &#x2022; &nbsp;2 hours ago</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/0a4409cd2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
