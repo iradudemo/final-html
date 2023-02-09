@@ -161,6 +161,10 @@ li .list-text {
   padding: 5px 10px;
   border-radius: 7px;
 }
+.active-tab {
+  background-color: #000 !important;
+  color: #fff;
+}
 .btn {
   padding: 3px 4px;
 }
